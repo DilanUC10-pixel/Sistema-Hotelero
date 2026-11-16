@@ -2,17 +2,14 @@ package com.inube.Hotel_Sistem.util;
 
 public class UtilConstants {
 
-    //Adoptante
-    public static String MSG8 = "Adoptante registrado correctamente";
-    public static String MSG9 = "Adoptante actualizado correctamente";
-    public static String MSG10 = "Adoptante eliminado correctamente";
-    public static String MSG15 = "Adoptante no encontrado";
-
     public static String MSG1 = "Consulta exitosa";
-    public static String MSG2 = "Producto registrado correctamente";
-    public static String MSG3 = "Producto actualizado correctamente";
-    public static String MSG4 = "Stock actualizado correctamente";
-    public static String MSG5 = "Producto eliminado correctamente";
+
+    //Clientes
+    public static String MSG2 = "Cliente no encontrado";
+    public static String MSG3 = "Cliente registrado correctamente";
+    public static String MSG4 = "Cliente actualizado correctamente";
+    public static String MSG5 = "Cliente eliminado correctamente";
+
     public static String MSG6 = "Pedido generado correctamente";
     public static String MSG7 = "Pedido cancelado correctamente";
     public static String MSG11 = "Mascota registrada correctamente";

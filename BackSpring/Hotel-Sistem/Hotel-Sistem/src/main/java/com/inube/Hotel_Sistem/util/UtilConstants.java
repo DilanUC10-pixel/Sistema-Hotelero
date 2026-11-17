@@ -9,8 +9,9 @@ public class UtilConstants {
     public static String MSG3 = "Cliente registrado correctamente";
     public static String MSG4 = "Cliente actualizado correctamente";
     public static String MSG5 = "Cliente eliminado correctamente";
+    //CatalogoHabitacion
+    public static String MSG6 = "Categoria registrada correctamente";
 
-    public static String MSG6 = "Pedido generado correctamente";
     public static String MSG7 = "Pedido cancelado correctamente";
     public static String MSG11 = "Mascota registrada correctamente";
     public static String MSG12 = "Mascota actualizada correctamente";

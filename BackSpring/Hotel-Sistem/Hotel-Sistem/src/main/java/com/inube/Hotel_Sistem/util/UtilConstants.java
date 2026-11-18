@@ -11,10 +11,12 @@ public class UtilConstants {
     public static String MSG5 = "Cliente eliminado correctamente";
     //CatalogoHabitacion
     public static String MSG6 = "Categoria registrada correctamente";
+    //Habitaciones
+    public static String MSG7 = "Habitacion registrada correctamente";
+    public static String MSG8 = "Habitacion no encontrado";
+    //Tarjetas
+    public static String MSG9 = "Tarjeta no encontrado";
 
-    public static String MSG7 = "Pedido cancelado correctamente";
-    public static String MSG11 = "Mascota registrada correctamente";
-    public static String MSG12 = "Mascota actualizada correctamente";
     public static String MSG13 = "Mascota eliminada correctamente";
     public static String MSG14 = "Mascota no encontrada";
     public static String MSG16 = "Producto no encontrado";

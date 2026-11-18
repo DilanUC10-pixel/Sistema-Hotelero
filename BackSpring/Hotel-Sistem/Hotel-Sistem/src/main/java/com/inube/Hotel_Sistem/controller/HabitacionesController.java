@@ -9,8 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import static com.inube.Hotel_Sistem.util.UtilConstants.MSG1;
-import static com.inube.Hotel_Sistem.util.UtilConstants.MSG3;
+import static com.inube.Hotel_Sistem.util.UtilConstants.*;
 
 @RestController
 @RequestMapping("/api/habitaciones")
@@ -21,7 +20,7 @@ public class HabitacionesController {
 
     @PostMapping
     public ResponseEntity<ApiResponse<?>> guardar(@RequestBody HabitacionesModel cliente) {
-        return ResponseEntity.ok(new ApiResponse<>(true, MSG3, service.guardar(cliente)));
+        return ResponseEntity.ok(new ApiResponse<>(true, MSG7, service.guardar(cliente)));
     }
 
     @GetMapping

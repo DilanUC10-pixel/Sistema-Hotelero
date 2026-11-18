@@ -15,7 +15,7 @@ public class HabitacionesModel {
     private Integer idHabitacion;
 
     @Column(name = "NUMEROHABITACION")
-    private String numeroHabitacion;          // era Integer
+    private String numeroHabitacion;
 
     @Column(name = "PISO")
     private Integer piso;
@@ -24,13 +24,13 @@ public class HabitacionesModel {
     private String descripcion;
 
     @Column(name = "PRECIOBASENOCHE")
-    private BigDecimal precioBaseNoche;       // era Double precioBase
+    private BigDecimal precioBaseNoche;
 
     @Column(name = "CAPACIDAD")
     private Integer capacidad;
 
     @Column(name = "IDCATALOGOHABITACION")
-    private Integer idCatalogoHabitacion;     // queda como lo tenías, sin @ManyToOne
+    private Integer idCatalogoHabitacion;
 
     @Column(name = "DISPONIBLE")
     private Integer disponible;

@@ -48,12 +48,17 @@ public class HabitacionesService {
     }
 
     public List<HabitacionResponseDTO> listarTodos() {
-        List<HabitacionesModel> habitaciones = habitacionesRepository.findAll();
+        List<HabitacionesModel> habitaciones = habitacionesRepository.findByEstado(CODEPOS);
         return mapearAListaDTO(habitaciones);
     }
 
-    public HabitacionesModel buscarPorId(Integer id){
-        return habitacionesRepository.findById(id).orElseThrow(() ->new RuntimeException(MSG2));
+    public HabitacionesModel buscarPorId(Integer id) {
+        HabitacionesModel habitacion = habitacionesRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException(MSG8));
+        if (!CODEPOS.equals(habitacion.getEstado())) {
+            throw new RuntimeException(MSG8);
+        }
+        return habitacion;
     }
 
     private List<HabitacionResponseDTO> mapearAListaDTO(List<HabitacionesModel> habitaciones) {

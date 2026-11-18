@@ -25,6 +25,7 @@ public class ClienteService {
     public ClienteModel buscarPorId(Integer id){
         return repository.findById(id).orElseThrow(() ->new RuntimeException(MSG2));
     }
+
     public ClienteModel actualizar(Integer id, ClienteModel request) {
 
         ClienteModel cliente = buscarPorId(id);
